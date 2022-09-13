@@ -15,7 +15,11 @@ const App = () => {
           name="Home"
           component={Home}
         />
-        <Stack.Screen name="ColorPalette" component={ColorPalette} options={({ route }) => ({ title: route.params.name })}/>
+        <Stack.Screen
+          name="ColorPalette"
+          component={ColorPalette}
+          options={({ route }) => ({ title: route.params.paletteName })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
