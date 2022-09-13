@@ -1,8 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 
-const Color = ({ colorName, hexCode }) => {
-
+const ColorBox = ({ colorName, hexCode }) => {
   const styles = StyleSheet.create({
     text: {
       textAlign: 'center',
@@ -12,16 +11,11 @@ const Color = ({ colorName, hexCode }) => {
     },
   });
 
-  console.warn(colorName);
   return (
     <View>
-      <Text
-        style={styles.text}
-      >{`${colorName} ${hexCode}`}</Text>
+      <Text style={styles.text}>{`${colorName} ${hexCode}`}</Text>
     </View>
   );
 };
 
-
-
-export default Color;
+export default ColorBox;
